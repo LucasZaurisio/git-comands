@@ -16,18 +16,13 @@ Este é um guia rápido de comandos básicos GIT, ou seja, os que são mais util
 * ```git add "nome do arquivo" ou "."``` - Coloca arquivos selecionados em stage. O ```.``` adiciona todos os arquivos modificados em stage.
 
 * ```git status``` - Verifica os arquivos que estão na area de stage.
-
 * ```git -rm -- cached "nome do arquivo"```- Remove os arquivos da area de stage
-
 * ```git commit -m "mensagem para citar as alteraçoes"``` - Faz o commit dos arquivos em stage na mensagem escreva o que foi modificado **NAO ESCREVA TEXTAO ! **
-
 * ```git config --local user.name "Seu nome aqui" ``` - Para definir/alterar seu nome de usuário
-
 * ```git config --local user.email "seu@email.aqui"``` - Para definir/alterar seu e-mail de usuário
 > Os dois ultimos comandos são essenciais principalmente para quando se está trabalhando em grupo. Ex: Encontrar quem fez o commit.
 
 * ```git log``` - Obtem-se informações sobre os commits ja feitos, Ex: hash do commits, dia, hora, mensagem.
-
 * ```git log --oneline``` -  Para informaçoes  de log resumidas.
 * ```git log -p``` - Para Informaçoes completas dos Commits.
 * ```git log -n "5"``` - Mostra somente os "5" ultimos commits feitos
