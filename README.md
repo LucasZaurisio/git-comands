@@ -1,10 +1,10 @@
 # GUIA DE COMANDOS BÁSICOS GIT
 
-Eu elaborei esse arquivo com o intuito de ajudar pessoas encontrarem facilmente os comandos que são mais utilizados no dia a dia de um dev. Porr que muitas das vezes para quem está iniciando encontrar o que precisa na documentação do git, as vezes não é muito amigavel, então fiz um compilado rápido so meu entendimento sobre os comandos.
+Eu elaborei esse arquivo com o intuito de ajudar pessoas encontrarem facilmente os comandos que são mais utilizados na rotina de um dev. Por que muitas das vezes para quem está iniciando encontrar o que precisa na documentação do git, as vezes não é muito amigavel, então fiz um compilado rápido so meu entendimento sobre os comandos.
 
-Este é um guia rápido de comandos básicos GIT, ou seja, os que são mais utilizados durante a rotina de um dev.
+Este é um guia rápido de comandos básicos GIT, ou seja, os que são mais utilizados no dia a dia de um dev.
 
- Caso você não entenda algo por aqui, ou queira se aprofundar mais no assunto, recomendo acessar a <a href= "https://git-scm.com/doc">documentação do Git</a> lá voce terá mais detalhes sobre os comandos. Aqui te ofereço somente um resumo. Espero que ajude !
+ Caso você não entenda algo por aqui, ou queira se aprofundar mais no assunto, recomendo acessar a <a href= "https://git-scm.com/doc">documentação do Git. </a> Lá voce terá mais detalhes sobre os comandos. Aqui te ofereço somente um resumo. Espero que ajude !
 
 ## Lista de comandos
 
@@ -27,18 +27,13 @@ Este é um guia rápido de comandos básicos GIT, ou seja, os que são mais util
 * ```git log -p``` - Para Informaçoes completas dos Commits.
 * ```git log -n "5"``` - Mostra somente os "5" ultimos commits feitos
 * ```git init --bare``` - cria um Repositório PURO! só contém as alterações dos arquivos feitos por push.
+* ```git remote -v``` - Visualizo meus repositórios 
+* ```git push "nome do repositorio" "nome da branch"``` - Após o commit esse é o comando que envia os dados do seu repositório local para o GitHub.
+* ```git pull "nome do repositório" "nome da branch"```- Pega os dados do GitHub e manda para a branch selecionada
 
+* ```git fetch "nome do repositório"/"nome da branch"``` - Pega os dados do GitHub e manda para a branch selecionada, só que as alterações precisam de revisão no comando ```git diff```para depois ser feito um ```git pull```
 
-
-git remote -v								     visualizo meus repositórios
-
-git push "nome do repositorio" "nome da branch"                              Envia dados para o servidor
-
-git pull "nome do repositório" "nome da branch"				     Pega os dados do servidor e manda para a branch selecionada
-
-git fetch "nome do repositório"/"nome da branch"			     Pega os dados do repositório remoto e manda para a 									     branch, só que ele não faz as mudanças diretamente 									     no código, voce precisa promeiro dar um git diff
-
-git push -u(sempre manda pro origin) "nome do repositório"                   Envia dados para o servidor
+* ```git push -u(sempre manda pro origin) "nome do repositório"``` - Envia commits feitos para o GitHub
 
 git branch								     verifica quais branchs estão criadas e fala em qual está
 
