@@ -4,7 +4,7 @@ Eu elaborei esse arquivo com o intuito de ajudar pessoas encontrarem facilmente 
 
 Este é um guia rápido de comandos básicos GIT, ou seja, os que são mais utilizados durante a rotina de um dev.
 
- Caso você não entenda algo por aqui, ou queira se aprofundar mais no assunto, recomendo acessar a <a href= "https://git-scm.com/doc">documentação do Git<a> lá voce terá mais detalhes sobre os comandos. Aqui te ofereço somente um resumo. Espero que ajude !
+ Caso você não entenda algo por aqui, ou queira se aprofundar mais no assunto, recomendo acessar a <a href= "https://git-scm.com/doc">documentação do Git</a> lá voce terá mais detalhes sobre os comandos. Aqui te ofereço somente um resumo. Espero que ajude !
 
 ## Lista de comandos
 
@@ -17,7 +17,7 @@ Este é um guia rápido de comandos básicos GIT, ou seja, os que são mais util
 
 * ```git status``` - Verifica os arquivos que estão na area de stage.
 * ```git -rm -- cached "nome do arquivo"```- Remove os arquivos da area de stage
-* ```git commit -m "mensagem para citar as alteraçoes"``` - Faz o commit dos arquivos em stage na mensagem escreva o que foi modificado **NAO ESCREVA TEXTAO ! **
+* ```git commit -m "mensagem para citar as alteraçoes"``` - Faz o commit dos arquivos em stage na mensagem escreva o que foi modificado <b>NAO ESCREVA TEXTAO !</b>
 * ```git config --local user.name "Seu nome aqui" ``` - Para definir/alterar seu nome de usuário
 * ```git config --local user.email "seu@email.aqui"``` - Para definir/alterar seu e-mail de usuário
 > Os dois ultimos comandos são essenciais principalmente para quando se está trabalhando em grupo. Ex: Encontrar quem fez o commit.
