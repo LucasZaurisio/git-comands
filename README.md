@@ -8,7 +8,7 @@ Este é um guia rápido de comandos básicos GIT, ou seja, os que são mais util
 
 ## Iniciando um Repositório local
 
-* git init - na pasta onde vc quer o repositório a ser criado (Cria repositório local)
+* ```git init``` - na pasta onde vc quer o repositório a ser criado (Cria repositório local)
 
 ## fazendo a conexão do seu repositório local com o GitHub
 > lembrando que para executar esse comando você já tem que ter um repositório criado no GitHub 
