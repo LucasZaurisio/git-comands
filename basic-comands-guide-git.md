@@ -4,7 +4,7 @@ Este é um guia de comandos básicos que são mais utilizados caso você tenha o
 
 Iniciando um Repositório
 
-* {% filename %}git init{% endfilename %} - na pasta onde vc quer o repositório a ser commitado (Cria repositório local)
+* {% filename %}git init{% endfilename %} - na pasta onde vc quer o repositório a ser criado (Cria repositório local)
 
 * git add "nome do arquivo" ou "." - para colocar na area de stage(sob supervisão do git) sendo o ponto adiciona todos os arquivos
 
@@ -40,7 +40,7 @@ Commitar a cada funcionalidade inserida
 
 git init --bare					                             Para Criar um Repositório PURO! só contém as  										     alterações dos arquivos
 
-git remote add nome do repositório  "caminho do servidor"		     Para conectar um servidor externo ao seu código
+git remote add nome do repositório  "caminho do servidor"		     Para conectar o repositorio no GitHub ao seu repositório local
 
 git remote -v								     visualizo meus repositórios
 
@@ -63,6 +63,8 @@ git checkout -b "nome da branch"					     Cria uma branch e ja troca para ela
 git merge "nome da branch onde quer mesclar"				     junta os trabalhos e gera um merge commit na branch atual
 
 git rebase "nome da branch que quer mesclar"				     aplica os commits de uma branch na branch atual
+
+git branch -m "novo nome da branch"                                       Renomeia o nome da branch(a branch tem que estar em head)
 
 
 !!!!!!!em qualquer caso entrar no editor VIM digitar ":x" !!!!!!!!!!!!!!!!
