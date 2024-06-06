@@ -6,20 +6,14 @@ Este é um guia rápido de comandos básicos GIT, ou seja, os que são mais util
 
  Caso você não entenda algo por aqui, ou queira se aprofundar mais no assunto, recomendo acessar a <a href= "https://git-scm.com/doc">documentação do Git<a> lá voce terá mais detalhes sobre os comandos. Aqui te ofereço somente um resumo. Espero que ajude !
 
-## Iniciando um Repositório local
 
-* ```git init``` - na pasta onde vc quer o repositório a ser criado (Cria repositório local)
+* ```git init``` - Inicia repositório local na pasta onde você quer o repositório local seja criado.
 
-## fazendo a conexão do seu repositório local com o GitHub
-> lembrando que para executar esse comando você já tem que ter um repositório criado no GitHub 
+* ```git remote add "nome do repositório" "caminho do servidor (HTTP/SSH)"``` - conecta repositório local ao GitHub
+> Pré requisito para executar esse comando, é ter o seu repositório ja criado no GitHub.
 
-* ```git remote add "nome do repositório" "caminho do servidor (HTTP/SSH)"```
+* ```git add "nome do arquivo" ou "."``` - Coloca arquivos selecionados em stage. O ```.``` adiciona todos os arquivos modificados em stage.
 
-## Colocando os Arquivos em Stage
-
-* ```git add "nome do arquivo" ou "."```
-
->para colocar arquivos na area de stage(sob supervisão do git).  "sendo o ponto adiciona todos os arquivos"
 
 git status                                           para verificar como vão os os arquivos.
 
