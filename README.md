@@ -1,12 +1,25 @@
 # GUIA DE COMANDOS BÁSICOS GIT
 
-Este é um guia de comandos básicos que são mais utilizados caso você tenha o interesse em se aprofundar mais no assunto, recomendo acessar a <a href= "https://git-scm.com/doc">documentação do gitHub<a> lá voce terá mais detalhes sobre os comandos. Aqui te ofereço somente um resumo.
+Eu elaborei esse arquivo com o intuito de ajudar pessoas encontrarem facilmente os comandos que são mais utilizados no dia a dia de um dev. Porr que muitas das vezes para quem está iniciando encontrar o que precisa na documentação do git, as vezes não é muito amigavel, então fiz um compilado rápido so meu entendimento sobre os comandos.
 
-Iniciando um Repositório
+Este é um guia rápido de comandos básicos GIT, ou seja, os que são mais utilizados durante a rotina de um dev.
 
-* {% filename %}git init{% endfilename %} - na pasta onde vc quer o repositório a ser criado (Cria repositório local)
+ Caso você não entenda algo por aqui, ou queira se aprofundar mais no assunto, recomendo acessar a <a href= "https://git-scm.com/doc">documentação do Git<a> lá voce terá mais detalhes sobre os comandos. Aqui te ofereço somente um resumo. Espero que ajude !
 
-* git add "nome do arquivo" ou "." - para colocar na area de stage(sob supervisão do git) sendo o ponto adiciona todos os arquivos
+## Iniciando um Repositório local
+
+* git init - na pasta onde vc quer o repositório a ser criado (Cria repositório local)
+
+## fazendo a conexão do seu repositório local com o GitHub
+> lembrando que para executar esse comando você já tem que ter um repositório criado no GitHub 
+
+* git remote add "nome do repositório  "caminho do servidor (HTTP/SSH)"
+
+## Colocando os Arquivos em Stage
+
+* git add "nome do arquivo" ou "."
+
+>para colocar arquivos na area de stage(sob supervisão do git).  "sendo o ponto adiciona todos os arquivos"
 
 git status                                           para verificar como vão os os arquivos.
 
@@ -40,7 +53,7 @@ Commitar a cada funcionalidade inserida
 
 git init --bare					                             Para Criar um Repositório PURO! só contém as  										     alterações dos arquivos
 
-git remote add nome do repositório  "caminho do servidor"		     Para conectar o repositorio no GitHub ao seu repositório local
+
 
 git remote -v								     visualizo meus repositórios
 
