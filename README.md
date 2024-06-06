@@ -6,6 +6,7 @@ Este é um guia rápido de comandos básicos GIT, ou seja, os que são mais util
 
  Caso você não entenda algo por aqui, ou queira se aprofundar mais no assunto, recomendo acessar a <a href= "https://git-scm.com/doc">documentação do Git<a> lá voce terá mais detalhes sobre os comandos. Aqui te ofereço somente um resumo. Espero que ajude !
 
+## Lista de comandos
 
 * ```git init``` - Inicia repositório local na pasta onde você quer o repositório local seja criado.
 
@@ -14,38 +15,23 @@ Este é um guia rápido de comandos básicos GIT, ou seja, os que são mais util
 
 * ```git add "nome do arquivo" ou "."``` - Coloca arquivos selecionados em stage. O ```.``` adiciona todos os arquivos modificados em stage.
 
+* ```git status``` - Verifica os arquivos que estão na area de stage.
 
-git status                                           para verificar como vão os os arquivos.
+* ```git -rm -- cached "nome do arquivo"```- Remove os arquivos da area de stage
 
-git -rm -- cached "nome do arquivo"                  para remove-lo da area de stage.
+* ```git commit -m "mensagem para citar as alteraçoes"``` - Faz o commit dos arquivos em stage na mensagem escreva o que foi modificado **NAO ESCREVA TEXTAO ! **
 
-git commit -m "mensagem para citar as alteraçoes"    Para commitar o Arquivo!!!!!! NAO ESCREVA TEXTAO !!!!!!
+* ```git config --local user.name "Seu nome aqui" ``` - Para definir/alterar seu nome de usuário
 
-git config --local user.name "Seu nome aqui"         Para definir/alterar seu nome
+* ```git config --local user.email "seu@email.aqui"``` - Para definir/alterar seu e-mail de usuário
+> Os dois ultimos comandos são essenciais principalmente para quando se está trabalhando em grupo. Ex: Encontrar quem fez o commit.
 
-git config --local user.email "seu@email.aqui"	     Para definir/alterar seu e-mail
+* ```git log``` - Obtem-se informações sobre os commits ja feitos, Ex: hash do commits, dia, hora, mensagem.
 
-
-!!!!!caso apareça mutas informaçoes alem da tela no console apertar a tecla Q!!!!!!!
-
-
-git log                                              Para Informações Sobre o commit
-
-git log --oneline                                    Para informaçoes em uma linha(resumida)
-
-git log -p                                           Para Informaçoes completas Commit
-
-git log -n "n"				             aparece somente os "n" ultimos commits feitos
-
-
-caso vc  queira que o git NAAAAAO monitore algum arquivo. Crie um arquivo chamado git ignore e adicione dentro dele os arquivos que vc quer que ele ignore
-em caso de pastas colocar /nomedapasta que ele ignora toda a pasta
-
-!!!NUNCA COMMITAR CODIGO NAO FUNCIONAL!!!
-
-Commitar a cada funcionalidade inserida
-
-git init --bare					                             Para Criar um Repositório PURO! só contém as  										     alterações dos arquivos
+* ```git log --oneline``` -  Para informaçoes  de log resumidas.
+* ```git log -p``` - Para Informaçoes completas dos Commits.
+* ```git log -n "5"``` - Mostra somente os "5" ultimos commits feitos
+* ```git init --bare``` - cria um Repositório PURO! só contém as alterações dos arquivos feitos por push.
 
 
 
@@ -118,3 +104,10 @@ git tag -a "nomeclatura da versão" -m "mensagem desejada"		    gera um marco na
 
 git tag 								    mostra todas as versões ja feitas
 			    
+!!!!!caso apareça mutas informaçoes alem da tela no console apertar a tecla Q!!!!!!!
+caso vc  queira que o git NAAAAAO monitore algum arquivo. Crie um arquivo chamado git ignore e adicione dentro dele os arquivos que vc quer que ele ignore
+em caso de pastas colocar /nomedapasta que ele ignora toda a pasta
+
+!!!NUNCA COMMITAR CODIGO NAO FUNCIONAL!!!
+
+Commitar a cada funcionalidade inserida
