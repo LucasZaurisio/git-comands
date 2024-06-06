@@ -124,9 +124,3 @@ git tag -a "nomeclatura da versão" -m "mensagem desejada"		    gera um marco na
 
 git tag 								    mostra todas as versões ja feitas
 			    
-
-
-
-		
-# calculatorJS
-A simple calculator made with HTML, CSS and vanilla JS( without frameworks)
