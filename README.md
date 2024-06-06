@@ -13,11 +13,11 @@ Este é um guia rápido de comandos básicos GIT, ou seja, os que são mais util
 ## fazendo a conexão do seu repositório local com o GitHub
 > lembrando que para executar esse comando você já tem que ter um repositório criado no GitHub 
 
-* git remote add "nome do repositório  "caminho do servidor (HTTP/SSH)"
+* ```git remote add "nome do repositório" "caminho do servidor (HTTP/SSH)"```
 
 ## Colocando os Arquivos em Stage
 
-* git add "nome do arquivo" ou "."
+* ```git add "nome do arquivo" ou "."```
 
 >para colocar arquivos na area de stage(sob supervisão do git).  "sendo o ponto adiciona todos os arquivos"
 
